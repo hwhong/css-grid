@@ -1,6 +1,11 @@
 .root {
-  grid-template-columns: 1fr 500px 1fr;
+  grid-template-columns: auto 1fr auto;
   height: 100vh;
   display: grid;
   width: 100%;
+}
+
+.grid {
+  background-color: black;
+  display: grid;
 }
