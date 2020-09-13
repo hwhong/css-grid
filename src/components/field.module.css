@@ -1,0 +1,10 @@
+.root {
+  justify-content: flex-start;
+  flex-direction: column;
+  display: flex;
+  padding: 8px;
+}
+
+.title {
+  margin: 2px 0;
+}

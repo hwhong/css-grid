@@ -1,8 +1,15 @@
 import React from "react";
-import styles from "./grid-item-insepctor.module.css";
+import styles from "./grid-item-inspector.module.css";
+import { Panel } from "./panel";
 
 interface GridItemInspectorProps {}
 
 export function GridItemInspector(props: GridItemInspectorProps) {
-  return <div></div>;
+  return (
+    <Panel>
+      <>
+        <div></div>
+      </>
+    </Panel>
+  );
 }
