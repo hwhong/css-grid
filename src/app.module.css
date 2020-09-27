@@ -6,6 +6,11 @@
 }
 
 .grid {
-  background-color: black;
+  background-color: white;
   display: grid;
+}
+
+.box {
+  background-color: aliceblue;
+  padding: 10px;
 }

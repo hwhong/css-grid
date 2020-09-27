@@ -2,8 +2,30 @@ import React from "react";
 import styles from "./grid-inspector.module.css";
 import { Panel } from "./panel";
 import { Field } from "./field";
+import { StyleMap } from "../App";
 
-interface GridInspectorProps {}
+// export interface InspectorStyle {
+//   gridTemplateColumns: string;
+//   gridTemplateRows: string;
+//   columnGap: string;
+//   rowGap: string;
+//   justifyItems: string;
+//   alignItems: string;
+//   justifyContents: string;
+// }
+
+export type GridStyle =
+  | "gridTemplateColumns"
+  | "gridTemplateRows"
+  | "columnGap"
+  | "rowGap"
+  | "justifyItems"
+  | "alignItems"
+  | "justifyContents";
+
+interface GridInspectorProps {
+  setStyle: (obj: StyleMap) => void;
+}
 
 export function GridInspector(props: GridInspectorProps) {
   return (
